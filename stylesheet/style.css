@@ -1,0 +1,206 @@
+* {
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+header {
+  padding: 5px;
+}
+header img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+.d-flex {
+  display: flex;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.navbar,
+.navbar *:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.navbar-brand {
+  color: black;
+}
+main {
+  padding: 50px 0;
+}
+main section:first-child {
+  padding: 80px 0;
+}
+main > *:first-child {
+  text-align: center;
+}
+main section:first-child h4 {
+  font-size: 35px;
+}
+main section:first-child .x {
+  margin: 20px 0;
+  position: relative;
+  border-radius: 100px;
+  display: inline-block;
+  padding: 0 15px;
+  border: 1px solid black;
+}
+main section:first-child .x input {
+  padding: 8px;
+  border: none;
+  padding-left: 40px;
+}
+main section:first-child .x input:focus {
+  width: 450px;
+  transition: ease-in-out width 0.3s;
+}
+main section:first-child .x button {
+  padding: 10px;
+  border: none;
+  top: 1px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+}
+@media screen and (max-width: 567px) {
+  main section:first-child h4 {
+    font-size: 25px;
+    transition: font-size ease-in-out 0.2s;
+  }
+  main section:nth-of-type(2) div[class="grid"] {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+main section:nth-of-type(2) div[class="grid"] {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 5px;
+  grid-gap: 15px;
+}
+@media screen and (max-width: 768px) and (max-width: 900px) {
+  main section:nth-of-type(2) div[class="grid"] {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+@media (max-width: 567px) and (max-width: 767px) {
+  main section:nth-of-type(2) div[class="grid"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+main section:nth-of-type(2) .container .grid .box {
+  margin: 10px 0;
+}
+main section:nth-of-type(2) .container .grid .box img {
+  width: 100%;
+  height: 300px;
+  border: 1px solid black;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main section:nth-of-type(2) .container .grid .box .d-flex button {
+  border: none;
+  padding: 5px;
+}
+
+main section:nth-of-type(2) .container .grid .box .d-flex div {
+  margin: 8px 0;
+}
+main section:nth-of-type(2) .container .grid .box .d-flex button:focus {
+  outline: 2px solid black;
+}
+main section:first-child .bttn {
+  margin: 15px;
+}
+main section:first-child .bttn span {
+  display: inline-block;
+  padding: 10px;
+}
+main section:first-child .bttn span:first-child {
+  background-color: lightblue;
+  border-radius: 100px;
+}
+footer {
+  padding: 10px 0;
+  background-color: lightblue;
+}
+footer .container .d-flex img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+footer .container .d-flex ul {
+  display: flex;
+  list-style: none;
+}
+footer .container .d-flex ul li {
+  margin: 0 5px;
+}
+footer .container .d-flex div span {
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  background-color: white;
+  display: inline-block;
+}
+.l span {
+  animation-name: loading;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-direction: alternate-reverse;
+}
+
+.l span:first-child {
+  animation-name: loading_;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-direction: alternate-reverse;
+}
+
+.l span:nth-of-type(2) {
+  animation-name: loading__;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-direction: alternate-reverse;
+}
+@keyframes loading {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes loading_ {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes loading__ {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
